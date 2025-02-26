@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Emotion-Based Music Recommender</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    </head>
+    
+<body>
+    <h1>Emotion-Based Music Recommender</h1>
+    <div id="controls">
+        <button id="start-btn">Start Detection</button>
+        <button id="stop-btn" disabled>Stop Detection</button>
+    </div>
+    <div id="camera-container">
+        <video id="webcam" autoplay playsinline></video>
+        <canvas id="canvas" style="display: none;"></canvas>
+    </div>
+    <div id="emotion-result">Detected Emotion: <span id="emotion-text">None</span></div>
+    <div id="music-recommendation">
+        <h2>Recommended Playlist:</h2>
+        <p id="playlist-name">No recommendation yet</p>
+        <iframe id="playlist-embed" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* Universal Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    text-align: center;
+    background-color: #1E1E2E;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Controls */
+#controls {
+    margin: 20px;
+}
+
+button {
+    padding: 12px 24px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+/* Start & Stop Buttons */
+#start-btn { background-color: #28a745; color: white; }
+#stop-btn { background-color: #dc3545; color: white; }
+#start-btn:hover { background-color: #218838; }
+#stop-btn:hover { background-color: #c82333; }
+
+/* Camera Container */
+#camera-container {
+    margin: 20px auto;
+    width: 270px;
+    height: 160px;
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+    background: #2A2A40;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Video Styling */
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Emotion Result */
+#emotion-result {
+    font-size: 1.8em;
+    margin: 20px;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+/* Music Recommendation */
+#music-recommendation {
+    margin-top: 30px;
+    background: #3B3B58;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    color: #FFD700;
+    font-size: 1.3em;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Spotify Widget */
+.spotify-embed {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+/* Hidden Canvas */
+canvas {
+    display: none;
+}
+
+/* 📱 Mobile Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    #camera-container {
+        width: 95%;
+        height: auto;
+        max-width: 350px;
+    }
+
+    video {
+        border-radius: 10px;
+    }
+
+    #emotion-result {
+        font-size: 1.5em;
+    }
+
+    #music-recommendation {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
